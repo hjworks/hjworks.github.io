@@ -59,7 +59,6 @@ const config = {
       }),
     ],
   ],
-
   markdown: {
     mermaid: true
   },
