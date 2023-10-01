@@ -1,3 +1,6 @@
+---
+slug: /
+---
 # HJ Library
 
 HJ의 도서관입니다.
