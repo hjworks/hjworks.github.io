@@ -1,32 +1,33 @@
 
-# TL; DR;
+# Django-Postgres Index
+## TL; DR;
 ### 다양한 키가 존재하는 단순 완전일치 검색에 대해서 GIN 성능 좋다
 ### 또는 BTree도 좋다.
 
-#   BloomIndex
+# Index types
+## BloomIndex
 
 * Postgresql에 bloomIndex Extension을 설치해야 한다
-
-# B-Tree
+## B-Tree
 * Postgres 기본 인덱스
 ### 장점
 * index row 의 `is_null`, `is_not_null` 등 처리할 때 속도가 매우 빠르다
 ### 단점
 * 정렬이 되어 있어야 한다.
 
-# Hash
+## Hash
 * index row 에 `=` 를 사용할 때 성능이 빠르다
 
-# GiST
+## GiST
 * 다양한 인덱스 연산자를 수행할 수 있다.
-# SP-GiST
+## SP-GiST
 
-# GIN
+## GIN
 ### 단점
 * indexed key에 heap row 삽입 / 업데이트 시 느리다
 * 디스크 많이 사용함
 
-# BRIN
+## BRIN
 * 물리적인 블록 범위에 대한 요약본을 저장한다.
 * 테이블 행이 물리적으로 근접해 있을 때 성능이 좋다.
 
