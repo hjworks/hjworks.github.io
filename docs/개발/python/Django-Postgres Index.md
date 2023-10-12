@@ -1,6 +1,10 @@
-# BloomIndex
 
-* 
+# TL; DR;
+### 다양한 키가 존재하는 단순 완전일치 검색에 대해서 GIN 성능 좋다
+### 또는 BTree도 좋다.
+
+#   BloomIndex
+
 * Postgresql에 bloomIndex Extension을 설치해야 한다
 
 # B-Tree
@@ -31,13 +35,10 @@ https://medium.com/@thegalang/indexing-in-postgresql-and-applying-it-to-jsonb-c9
 ### GIN
 * 완전일치 검색 수행 시 GIN 이 최적이다.
 ### TRIGRAM
-* 패턴매칭 검색에 최적이다(Pandas를 이용한) 데이터 분석 실습  : 2/e
-
+* 패턴매칭 검색에 최적이다
 ### Hash
 ### BTree
 
 
-### 다양한 키가 존재하는 단순 완전일치 검색에 대해서 GIN 성능 좋다
-### 또는 BTree도 좋다.
 
 
